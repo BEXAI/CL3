@@ -1,0 +1,52 @@
+# Environment & secrets
+.env
+.env.*
+.mcp.json
+.claude/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# UHNW PII data files
+*.csv
+*.xlsx
+*.numbers
+
+# Query files (contain full names)
+*.txt
+# ...but keep dependency manifest
+!requirements.txt
+
+# Data, checkpoints, and outputs (may contain UHNW PII) — exclude ALL json/jsonl
+*.json
+*.jsonl
+
+# Client documents
+*.docx
+*.pdf
+
+# Business logic / scoring instructions
+phase2_propensity_scorer_instructions.json
+
+# Data outputs (legacy patterns)
+enriched_*.csv
+*_checkpoint.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
